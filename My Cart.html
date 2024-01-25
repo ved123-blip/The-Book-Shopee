@@ -1,0 +1,503 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>The Book Shopee</title>
+  <style>
+    body {
+        padding-top: 60px; /* Adjust the top padding for the body */
+    }
+
+    /* Add padding to the customer-info-section and contact-info-section */
+    .customer-info-section,
+    .contact-info-section {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+    /* Add padding to the form elements */
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    /* Add padding to the payment-options */
+    .payment-options {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+    /* Add padding to the transaction ID input field */
+    #transactionIdSection {
+        margin-bottom: 20px;
+    }
+
+    /* Add padding to the "Place Order" button */
+    #checkout-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    /* ... (previous code) ... */
+</style> 
+  
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+<!-- Add this to the head section of your HTML -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+<!--header-->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke p-0">
+          <h1> <a class="navbar-brand" href="index.html">
+                  <span class="fa fa-book book-icon"></span> The Book Shopee
+              </a></h1>
+          <!-- if logo is image enable this   
+  <a class="navbar-brand" href="#index.html">
+      <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+  </a> -->
+          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-lg-5 mr-lg-auto">
+                  <li class="nav-item @@home__active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item @@My Library__active">
+                      <a class="nav-link" href="My Library.html">My Library</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="My Cart.html">My Cart</a>
+                </li>
+                  <li class="nav-item @@contact__active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+
+              <!--/search-right-->
+              <div class="navbar-nav search-right nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#Pages" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="fa fa-search"></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <div class="search_form">
+                          <form action="search-results.html" method="GET">
+                              <input type="text" placeholder="Search">
+                              <button type="submit" class="btn" value=""><span class="fa fa-search"
+                                      aria-hidden="true"></span></button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <!--//search-right-->
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+      </nav>
+  </div>
+</header>
+<!--/header-->
+<div class="container py-lg-5 py-md-12">
+    <div class="row justify-content-center align-items-center">
+        <!-- Book Image Column -->
+        <div class="col-md-6 text-left mb-4">
+            <img src="assets/images/meal11.jpg" alt="Book Image" class="img-fluid" style="max-width: 400px;">
+        </div>
+
+        <!-- Book Details Column -->
+        <div class="col-md-6">
+            <div class="title-align mb-4 text-center">
+                <h1>You Can</h1>
+                <p>Genre: Think n grow</p>
+                <p>Author: George Matthew Adams</p>
+                <p>Published Year: 2020</p>
+            </div>
+
+            <!-- Pricing and Discounts -->
+            <div class="pricing-details text-center">
+                <h5>Pricing Details</h5>
+                <p>MRP: ₹300.00</p>
+                <p>Additional Discount: 10%</p>
+                <p>Total: ₹270.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Customer Information Section -->
+        <div class="customer-info-section">
+            <h2 class="mt-4" style="color: orange;">Customer Information</h2>
+            <!-- Other content here -->
+        </div>
+        <div style="height: 30px;"></div>
+            <!-- Name Section -->
+            <div class="form-group">
+                <label for="customerName">Name</label>
+                <input type="text" class="form-control" id="customerName" required>
+            </div>
+
+            <!-- Address Section -->
+            <div class="form-group">
+                <label for="shippingAddress">Shipping Address</label>
+                <textarea class="form-control" id="shippingAddress" rows="3" required></textarea>
+            </div>
+
+            <!-- Pin Code and City -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="pinCode">Pin Code</label>
+                    <input type="text" class="form-control" id="pinCode" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" required>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="contact-info-section">
+            <h2 class="mt-4" style="color: hwb(39 31% 13%);">Customer Information</h2>
+            <div style="height: 30px;padding: 2px;"></div>
+
+            <!-- Email Section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <!-- Phone Number Section -->
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" required>
+                <!-- Payment Options Section -->
+<!-- Payment Options Section -->
+<!-- Payment Options Section -->
+<!-- Add CAPTCHA implementation here (e.g., using Google reCAPTCHA) -->
+<!-- Example: <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div> -->
+
+<!-- Payment Options Section -->
+<!-- Payment Options Section -->
+<!-- ... (previous code) ... -->
+
+<div class="payment-options mt-4">
+    <h2 style="color: orange;">Payment Options</h2>
+    <div style="height: 30px;"></div>
+
+    <!-- Cash On Delivery -->
+    <button type="button" class="btn btn-outline-secondary mr-2 payment-option" data-option="COD">
+        Cash On Delivery
+    </button>
+
+    <!-- UPI - PhonePe -->
+    <button type="button" class="btn btn-outline-secondary mr-2 payment-option" data-option="PhonePe">
+        UPI - PhonePe
+    </button>
+
+    <!-- UPI - Google Pay -->
+    <button type="button" class="btn btn-outline-secondary mr-2 payment-option" data-option="GooglePay">
+        UPI - Google Pay
+    </button>
+
+    <!-- UPI - Paytm -->
+    <button type="button" class="btn btn-outline-secondary mr-2 payment-option" data-option="Paytm">
+        UPI - Paytm
+    </button>
+
+    <!-- UPI - Amazon Pay -->
+    <button type="button" class="btn btn-outline-secondary mr-2 payment-option" data-option="AmazonPay">
+        UPI - Amazon Pay
+    </button>
+
+    <!-- UPI Transaction ID -->
+    <div class="form-group mt-4" id="transactionIdSection">
+        <label for="transactionId">Transaction ID (UPI Payments)</label>
+        <input type="text" class="form-control" id="transactionId">
+    </div>
+
+    <!-- CAPTCHA Verification for Cash On Delivery -->
+    <div id="captcha-section" class="captcha-section mt-4" style="display: none;">
+        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+    </div>
+</div>
+
+<script>
+    // Initialize visibility based on default payment option
+    document.getElementById('transactionIdSection').style.display = 'none';
+    document.getElementById('captcha-section').style.display = 'none';
+
+    // Handle payment option selection
+    document.querySelectorAll('.payment-option').forEach(function (button) {
+        button.addEventListener('click', function () {
+            var selectedOption = this.getAttribute('data-option');
+            selectPaymentOption(selectedOption);
+        });
+    });
+
+    function selectPaymentOption(option) {
+        // Logic to handle the selected payment option
+        console.log('Selected Payment Option:', option);
+
+        // Show/hide sections based on the selected payment option
+        if (option.startsWith('UPI')) {
+            document.getElementById('transactionIdSection').style.display = 'block';
+            document.getElementById('captcha-section').style.display = 'none';
+        } else if (option === 'COD') {
+            document.getElementById('transactionIdSection').style.display = 'none';
+            document.getElementById('captcha-section').style.display = 'block';
+        } else {
+            document.getElementById('transactionIdSection').style.display = 'none';
+            document.getElementById('captcha-section').style.display = 'none';
+        }
+
+        // Toggle button styles based on selection
+        document.querySelectorAll('.payment-option').forEach(function (button) {
+            button.classList.remove('btn-primary');
+        });
+
+        this.classList.add('btn-primary');
+    }
+</script>
+
+<!-- ... (remaining code) ... -->
+
+    <!-- Add more payment options if needed -->
+  
+    <!-- CAPTCHA Verification -->
+    <div class="captcha-section mt-4">
+      <!-- Add CAPTCHA implementation here (e.g., using Google reCAPTCHA) -->
+      <!-- Example: <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div> -->
+    </div>
+  </div>
+  <div style="height: 50px;"></div>
+  <h4>Transaction ID</h4>
+  <td><input type="text" name="transaction_id" maxlength="18" style="width: 300px; padding: 8px; font-size: 16px;"></td>
+  
+  
+  
+
+  <div style="height: 50px;"></div>
+  
+            </div>
+            <div class="text-center">
+                <button id="checkout-btn" class="btn mt-4" style="background-color: orange; color: white;" data-toggle="modal" data-target="#customerDetailsModal">Place Order</button>
+            </div>
+
+        </div>
+    </section>
+</main>
+<div style="height: 50px;"></div>
+
+<!-- ... (remaining code) ... -->
+
+ <!-- footer -->
+ <footer class="py-5">
+    <div class="container pt-md-5">
+      <div class="footer-logo mb-lg-5 mb-4 text-center">
+        <a class="navbar-brand" href="index.html"><span class="fas fa-book book-icon"></span> The Book Shopee</a>
+        <p>We want to provide you with a great experience. Your feedback helps us
+          bring you more of the events you love and the service you expect.</p>
+      </div>
+      <div class="footer-grid">
+        <div class="w3l-copyright text-center">
+          <div class="social text-center">
+            <ul class="d-flex justify-content-center">
+              <li class="mx-md-2 mx-1"><a href="#url" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+              <li class="mx-md-2 mx-1"><a href="#url" class="twitter"><span class="fab fa-twitter"></span></a></li>
+              <li class="mx-md-2 mx-1"><a href="#url" class="rss"><span class="fas fa-rss"></span></a></li>
+              <li class="mx-md-2 mx-1"><a href="#url" class="linkedin"><span class="fab fa-linkedin-in"></span></a></li>
+              <li class="mx-md-2 mx-1"><a href="#url" class="google"><span class="fab fa-google-plus"></span></a></li>
+            </ul>
+          </div>
+          <p class="mt-4">© 2024 The Book Shopee. All Rights Reserved | Design by Vedant Patel
+            
+            </a></p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    &#10548;
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
+
+  <script src="assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
+
+  <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+
+  <!-- owlcarousel -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- script for banner typing text -->
+  <script>
+    function autoType(elementClass, typingSpeed) {
+      var thhis = $(elementClass);
+      thhis.css({
+        "position": "relative",
+        "display": "inline-block"
+      });
+      thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+      thhis = thhis.find(".text-js");
+      var text = thhis.text().trim().split('');
+      var amntOfChars = text.length;
+      var newString = "";
+      thhis.text("|");
+      setTimeout(function () {
+        thhis.css("opacity", 1);
+        thhis.prev().removeAttr("style");
+        thhis.text("");
+        for (var i = 0; i < amntOfChars; i++) {
+          (function (i, char) {
+            setTimeout(function () {
+              newString += char;
+              thhis.text(newString);
+            }, i * typingSpeed);
+          })(i + 1, text[i]);
+        }
+      }, 1500);
+    }
+
+    $(document).ready(function () {
+      // Now to start autoTyping just call the autoType function with the 
+      // class of outer div
+      // The second paramter is the speed between each letter is typed.   
+      autoType(".type-js", 200);
+    });
+  </script>
+  <!-- //script for banner typing text -->
+
+  <!-- script for carousel slider -->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo1").owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 30,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          767: {
+            items: 2,
+            nav: false
+          },
+          992: {
+            items: 4,
+            nav: false
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for carousel slider -->
+
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <!-- bootstrap js -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  </body>
+
+  </html>
